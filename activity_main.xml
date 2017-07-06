@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.jithu.spinner.LoginActivity"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTextId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/buttonGet"
+            android:text="Get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+</LinearLayout>
+
+
+
+    <!-- Label -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dip"
+        android:text="@string/lblAcc" />
+
+    <!-- Spinner Dropdown -->
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="10dip"
+        android:entries="@array/acc_type" />
+
+    <!-- Select Label -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dip"
+        android:text="@string/lblSubAcc" />
+
+    <!-- Spinner Dropdown -->
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dip"
+                android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/teachername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="textPersonName"
+            android:text="" />
+
+
+            <RadioGroup
+                android:id="@+id/rgroup"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="21dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="rdclick"
+                    android:text="1st Hr" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="rdclick"
+                    android:text="2nd Hr" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="rdclick"
+                    android:text="3rd Hr" />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="rdclick"
+                    android:text="4th Hr" />
+
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="rdclick"
+                    android:text="5th Hr" />
+
+            </RadioGroup>
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/radio_group_instal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+            <TextView
+                android:id="@+id/damu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Damodar"
+                android:layout_marginTop="21dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:layout_alignTop="@+id/damu"
+                android:layout_alignLeft="@+id/checkBox2"
+                android:layout_alignStart="@+id/checkBox2" />
+            <TextView
+                android:id="@+id/nibin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nibin"
+                android:layout_marginTop="21dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/damu" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:layout_above="@+id/checkBox3"
+                android:layout_alignLeft="@+id/checkBox3"
+                android:layout_alignStart="@+id/checkBox3" />
+            <TextView
+                android:id="@+id/mahesh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mahesh"
+                android:layout_marginTop="21dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/nibin" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="102dp"
+                android:layout_marginRight="102dp"
+                android:checked="true"
+                android:layout_alignTop="@+id/mahesh" />
+            <TextView
+                android:id="@+id/damu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mahesh"
+                android:layout_marginTop="21dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/mahesh" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="102dp"
+                android:layout_marginRight="102dp"
+                android:checked="true"
+                android:layout_alignTop="@+id/damu1" />
+            <TextView
+                android:id="@+id/nibin1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mahesh"
+                android:layout_marginTop="21dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/damu1" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="102dp"
+                android:layout_marginRight="102dp"
+                android:checked="true"
+                android:layout_alignTop="@+id/nibin1" />
+            <TextView
+                android:id="@+id/mahesh1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mahesh"
+                android:layout_marginTop="21dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/nibin1" />
+
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="102dp"
+                android:layout_marginRight="102dp"
+                android:checked="true"
+
+                android:layout_alignTop="@+id/mahesh1" />
+
+            <CheckBox
+                android:id="@+id/checkall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/checkBox6"
+                android:layout_alignStart="@+id/checkBox6"
+                android:layout_below="@+id/checkBox6"
+                android:layout_marginTop="22dp"
+                android:text="CheckAll"
+                />
+
+        <Button
+            android:id="@+id/Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/checkall"
+            android:layout_marginTop="35dp"
+            android:layout_toEndOf="@+id/checkBox2"
+            android:layout_toRightOf="@+id/checkBox2"
+            android:text="SUBMIT" />
+
+        <Button
+            android:id="@+id/Reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/checkall"
+            android:text="RESET" />
+
+
+    </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+    </ScrollView>

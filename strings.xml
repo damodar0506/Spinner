@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Spinner</string>
+    <string name="action_settings">Settings</string>
+    <string name="lblAcc">Select COURSE</string>
+    <string name="lblSubAcc">Select SUBJECT</string>
+    <string name="name">TEACHER NAME</string>
+
+    <string-array name="acc_type">
+        <item>Select Course</item>
+        <item>Draughtsman (Civil)2014-16</item>
+        <item>Mechanic Motor Vehicle 2014-16</item>
+        <item>Electronics Mechanic 2014-16</item>
+        <item>Mechanic Computer Hardware 2014-16</item>
+        <item>Draughtsman (Civil) 2015-17</item>
+        <item>Mechanic Motor Vehicle 2015-17</item>
+        <item>Electronic Mechanic 2015-17</item>
+        <item></item>
+    </string-array>
+</resources>
